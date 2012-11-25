@@ -1,0 +1,9 @@
+content     playonplayer    chrome/content/
+content     playonplayer    chrome/content/ contentaccessible=yes
+overlay chrome://browser/content/browser.xul chrome://playonplayer/content/browser.xul
+
+locale	playonplayer	en-US	locale/en-US/
+locale	playonplayer	ru 	  locale/ru-RU/
+
+skin	playonplayer	classic/1.0	skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://playonplayer/skin/skin.css

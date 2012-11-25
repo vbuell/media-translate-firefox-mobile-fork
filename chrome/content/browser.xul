@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://linktargetfinder/skin/skin.css" type="text/css"?> 
+<!DOCTYPE playonplayer SYSTEM "chrome://playonplayer/locale/translations.dtd">
+<overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		<script src="playOnPlayer.js" />
+
+    <popup id="contentAreaContextMenu">
+      <menuitem id="play-on-player-context-item" 
+        label="&runplayonplayer;" 
+        oncommand="playOnPlayer.run()"/>
+    </popup>
+		
+		<menupopup id="menu_ToolsPopup"> 
+			<menuitem label="&runplayonplayer;" 
+			  key="play-on-player-run-key" 
+			  oncommand="playOnPlayer.run()"/> 
+		</menupopup>
+		
+		<keyset>
+			<key id="play-on-player-run-key" 
+			  modifiers="accel alt shift" 
+			  key="P" 
+			  oncommand="playOnPlayer.run()"/>
+		</keyset>
+		
+		<toolbarpalette id="BrowserToolbarPalette">
+			<toolbarbutton id="play-on-player-toolbar-button" 
+			  image="chrome://playonplayer/skin/mediarenderer.ico"
+			  orient="vertical"
+			  label="&runplayonplayer;" 
+			  tooltiptext="&runplayonplayer;" 
+			  oncommand="playOnPlayer.run()"/>
+		</toolbarpalette>
+</overlay>
